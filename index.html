@@ -1,50 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Sora&family=JetBrains+Mono:wght@200;500"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
     <title>CV</title>
-</head>
-<body>
-  <div class="content-cont">
-    <nav class="nav-bar">
-      <div class="nav-bar__left-wrapper">
-        <div class="nav-bar__logo nav-logo">
-          <a class="nav-link" href="#">
-            bu<br>sche<br>nyy
-          </a>
+  </head>
+  <body>
+    <div class="content-cont">
+      <nav class="nav-bar content-block content-block_nav">
+        <div class="nav-bar__left-wrapper">
+          <div class="nav-bar__logo nav-logo">
+            <a class="nav-link" href="#"> bu<br />sche<br />nyy </a>
+          </div>
+        </div>
+        <div class="nav-bar__right-wrapper">
+          <ul class="nav-bar__item-cont">
+            <li class="nav-item"><a href="#">services</a></li>
+            <li class="nav-item"><a href="#">about</a></li>
+            <li class="nav-item"><a href="#">skills</a></li>
+            <li class="nav-item"><a href="#">more</a></li>
+            <li class="nav-item"><a href="#">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="greet-cont">
+        <div class="greet-cont__left-wrap"></div>
+        <div class="greet-cont__right-wrap">
+          <p class="greet-cont__greet">
+            Hello<br />
+            I’m a Frontend Developer
+          </p>
+          <div class="greet-cont__sub-cont sub-cont">
+            <p class="greet-cont__sub-item">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum aliquet sit amet augue rutrum placerat. Vivamus orci
+              dolor, pellentesque sit amet dui eu, consectetur pulvinar tellus.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="nav-bar__right-wrapper">
-        <ul class="nav-bar__item-cont">
-          <li class="nav-item"><a href="#">services</a></li>
-          <li class="nav-item"><a href="#">about</a></li>
-          <li class="nav-item"><a href="#">skills</a></li>
-          <li class="nav-item"><a href="#">more</a></li>
-          <li class="nav-item"><a href="#">contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="greet-cont">
-      <div class="greet-cont__left-wrap"></div>
-      <div class="greet-cont__right-wrap">
-        <p class="greet-cont__greet">
-          Hello<br> I’m a Frontend Developer
-        </p>
-        <div class="greet-cont__sub-cont sub-cont">
-        <p class="greet-cont__sub-item">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet sit amet augue rutrum placerat. Vivamus orci dolor, pellentesque sit amet dui eu, consectetur pulvinar tellus.
-        </p>
+      <div class="content-block content-block_services services">
+        <p class="services__title block-title">SERVICES</p>
+        <div class="services__service service">
+          <div class="service__title-container">
+            <p class="service__title">
+              Frontend<br /><span>&</span> web app<br /><span>development</span>
+            </p>
+            <hr class="service__vertical-line vertical-line" />
+          </div>
+          <div class="service__cards-cont cards">
+            <div class="cards__item card">
+              <div class="cards__card-title">
+                <div class="cards__card-logo">
+                  <img src="icons/html.png" alt="html">
+                </div>
+                <p>HTML5</p>
+              </div>
+              <p class="cards__card-text">
+                It is this technology that is responsible for your site, the skeleton of the site, everything rests on it.
+              </p>
+            </div>
+            <div class="cards__item card cards__item_orange">
+              <div class="cards__card-title">
+                <div class="cards__card-logo">
+                  <img src="icons/css.png" alt="css">
+                </div>
+                <p>CSS3</p>
+              </div>
+              <p class="cards__card-text">
+                This style language allows me to style the site skeleton the way you want. It all depends on your imagination.
+              </p>
+            </div>
+            <div class="cards__item card">
+              <div class="cards__card-title">
+                <div class="cards__card-logo">
+                  <img src="icons/js.png" alt="js">
+                </div>
+                <p>Java Sctipt</p>
+              </div>
+              <p class="cards__card-text">
+                With it, we will revive the skeleton. It provides dynamic interactivity to your site.
+              </p>
+            </div>
+            <div class="cards__item card cards__item_orange">
+              <div class="cards__card-title">
+                <div class="cards__card-logo">
+                  <img src="icons/bootstrap.png" alt="bootstrap">
+                </div>
+                <p>Bootstrap</p>
+              </div>
+              <p class="cards__card-text">
+                It is an additional tool that speeds up the development of site adaptability and more.
+              </p>
+            </div>
+            <div class="cards__item">
+              <div class="cards__card-title">
+                <div class="cards__card-logo">
+                  <img src="icons/jquery.png" alt="jquery">
+                </div>
+                <p>jQuery</p>
+              </div>
+              <p class="cards__card-text">
+                It is also an additional tool that allows you to accelerate dynamic interactivity.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-</body>
+  </body>
 </html>
