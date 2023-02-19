@@ -101,6 +101,7 @@ a, li {
 
 .services {
   min-height: 200px;
+  margin-bottom: 40px;
 }
 
 .block-title {
@@ -122,12 +123,15 @@ a, li {
   align-items: center;
   width: 100%;
 }
-.service__title-container {
-  display: flex;
+.service__cards-cont {
+  width: 100%;
+}
+
+.title-cont {
   position: relative;
   margin-right: 35px;
 }
-.service__title {
+.title-cont__title {
   font-family: "JetBrains Mono";
   font-style: normal;
   text-align: right;
@@ -136,14 +140,10 @@ a, li {
   line-height: 31px;
   letter-spacing: -0.01em;
 }
-.service__title > span {
+.title-cont__title > span {
   font-weight: 200;
 }
-.service__cards-cont {
-  width: 100%;
-}
-
-.vertical-line {
+.title-cont__vertical-line {
   top: 37px;
   right: -83px;
   position: absolute;
@@ -193,4 +193,36 @@ a, li {
 }
 .cards__item_orange {
   background: rgba(254, 111, 77, 0.85);
+}
+
+.about {
+  height: 255px;
+  align-items: center;
+}
+.about__title {
+  left: -36px;
+  top: 61px;
+}
+.about__img-container {
+  width: 130px;
+  height: 100%;
+}
+.about__vertical-line {
+  width: 175px;
+  top: 3px;
+  right: -106px;
+}
+.about__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140.2%;
+  margin-bottom: 7px;
+}
+.about__text > span {
+  font-weight: 600;
+}
+.about__text:last-child {
+  margin-bottom: 0px;
 }/*# sourceMappingURL=style.css.map */

@@ -87,6 +87,7 @@ a, li
 
 .services
     min-height: 200px
+    margin-bottom: 40px
 
 .block-title
     position: absolute
@@ -105,10 +106,12 @@ a, li
     display: flex
     align-items: center
     width: 100%
-    &__title-container
-        display: flex
-        position: relative
-        margin-right: 35px
+    &__cards-cont
+        width: 100%
+
+.title-cont
+    position: relative
+    margin-right: 35px
     &__title
         font-family: 'JetBrains Mono'
         font-style: normal
@@ -119,16 +122,13 @@ a, li
         letter-spacing: -0.01em
         > span
             font-weight: 200
-    &__cards-cont
-        width: 100%
-
-.vertical-line
-    top: 37px
-    right: -83px
-    position: absolute
-    width: 130px
-    border: 1px solid #FE6F4D
-    transform: matrix(0, 1, -1, 0, 0, 0)
+    &__vertical-line
+        top: 37px
+        right: -83px
+        position: absolute
+        width: 130px
+        border: 1px solid #FE6F4D
+        transform: matrix(0, 1, -1, 0, 0, 0)
 
 .cards
     display: flex
@@ -165,3 +165,28 @@ a, li
         padding-top: 16px
         &_orange
             background: rgba(254, 111, 77, 0.85)
+
+.about
+    height: 255px
+    align-items: center
+    &__title
+        left: -36px
+        top: 61px
+    &__img-container
+        width: 130px
+        height: 100%
+    &__vertical-line
+        width: 175px
+        top: 3px
+        right: -106px
+    &__text
+        font-family: 'Montserrat'
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        line-height: 140.2%
+        margin-bottom: 7px
+        > span
+            font-weight: 600
+    &__text:last-child
+        margin-bottom: 0px
