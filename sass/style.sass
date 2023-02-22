@@ -4,7 +4,7 @@
 body
     background: #8f480e
 
-a, li
+a, .nav-item
     all: unset
 
 .content-cont
@@ -23,6 +23,7 @@ a, li
     padding-left: 111px
     display: flex
     color: white
+    margin-bottom: 40px
     &_nav 
         padding-left: 20px
 
@@ -169,6 +170,7 @@ a, li
 .about
     height: 255px
     align-items: center
+    margin-bottom: 40px
     &__title
         left: -36px
         top: 61px
@@ -190,3 +192,133 @@ a, li
             font-weight: 600
     &__text:last-child
         margin-bottom: 0px
+
+.skills
+    font-family: 'Inter'
+    height: 327px
+    z-index: -1
+    display: flex
+    justify-content: space-between
+    overflow: hidden
+    &__title
+        left: -31px
+        top: 60px
+    &__img
+        position: absolute
+        width: 208px
+        transform: rotate(81deg)
+        bottom: -60px
+        left: 50px
+        opacity: 0.7
+    &__lang
+        width: 156px
+
+.skill-title
+    font-family: 'Inter'
+    font-style: normal
+    font-weight: 500
+    font-size: 24px
+    line-height: 101.2%
+    letter-spacing: -0.07em
+    margin-bottom: 15px
+    position: relative
+    &__sub-line
+        position: absolute
+        bottom: -12px
+        width: 110px
+        border: 0.5px solid #1D6A69
+        z-index: -1
+
+.skill-el
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 13px
+    &__img-rectangle
+        border: 1px solid #FFFFFF
+        border-radius: 2px
+        width: 16px
+        height: 16px
+        margin-right: 17px
+        display: flex
+        justify-content: center
+        align-items: center
+        > img
+            width: 12px
+            height: 12px
+    &__title
+        display: flex
+        align-items: center
+        font-family: 'Inter'
+        font-style: normal
+        font-weight: 500
+        font-size: 10px
+        line-height: 102.7%
+        letter-spacing: -0.07em
+        
+
+.prog-bar
+    width: 100px
+    height: 7px
+    &__chanell
+        height: inherit
+        background: #252933
+        box-shadow: inset 0px 0px 0.5px 0.5px #1B1E25
+        border-radius: 16px
+    &__indicator
+        width: 50%
+        height: inherit
+        background: #FE6F4D
+        box-shadow: 1px 0px 0.5px #21252F, 0px 0px 8px rgba(36, 157, 156, 0.31)
+        border-radius: 16px
+
+.sw-skills
+    width: 198px
+    &__el
+        margin-bottom: 7px
+    &__title-sub-line
+        width: 145px
+
+.comp
+    width: 197px
+    &__sub-line
+        width: 140px
+
+.list-content
+    display: flex
+    flex-direction: column
+    &__container
+        flex: 1
+        font-family: 'Inter'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 100%
+        margin-left: 18px
+        ul
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            height: 100%
+            li
+                list-style-type: disc  
+
+.edu
+    width: 187px
+    &__sub-line
+        width: 100px
+    &__content
+        margin-bottom: 25px
+        &-title
+            color: #FE6F4D
+
+.courses
+    display: flex
+    flex-direction: column
+    flex: 1
+    &__subtitle
+        color: #FE6F4D
+    &__title
+        font-size: 20px
+    &__sub-line
+        width: 70px
